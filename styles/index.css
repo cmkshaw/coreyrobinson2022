@@ -44,3 +44,30 @@
     color: white;
     background: url("/assets/layout/sphere-reverse.svg") center bottom no-repeat, url("/assets/layout/noise-bg.png") left top repeat;
   }
+
+  .dashed-border {
+    opacity: 0.5;
+    padding: 1vmin;
+    overflow: visible;
+    border: 0;
+    position: relative;
+    background-image: linear-gradient(to right, #fff 0 50%, transparent 50% 100%), linear-gradient(to right, #fff 0 50%, transparent 50% 100%);
+    background-repeat: repeat no-repeat;
+    background-size: 2% 2px;
+  }
+
+  .dashed-border:before {
+    content: "•";
+    position: absolute;
+    font-size: 40px;
+    left: -4px;
+    top: -34px;
+  }
+
+  .dashed-border:after {
+    content: "•";
+    position: absolute;
+    font-size: 40px;
+    right: -4px;
+    top: -34px;
+  }

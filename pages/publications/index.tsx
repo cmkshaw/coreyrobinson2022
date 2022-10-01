@@ -4,6 +4,7 @@ import Layout from '../../components/layout'
 import Head from 'next/head'
 import Post from '../../interfaces/post'
 import { getAllPublications } from '../../lib/api'
+import PageHeader from '../../components/page-header'
 
 type Props = {
   allPosts: Post[]
@@ -16,9 +17,12 @@ export default function Index({ allPosts }: Props) {
         <Head>
           <title>Next.js Blog Example</title>
         </Head>
-        <Container>
-          {allPosts.length > 0 && <Publications posts={allPosts} />}
-        </Container>
+        <PageHeader title="Publications"/>
+        <div className="bg-noise">
+          <Container>
+            {allPosts.length > 0 && <Publications posts={allPosts} />}
+          </Container>
+        </div>
       </Layout>
     </>
   )
@@ -29,9 +33,7 @@ export const getStaticProps = async () => {
     'title',
     'date',
     'slug',
-    'author',
-    'coverImage',
-    'excerpt',
+    'publisher',
   ])
 
   return {

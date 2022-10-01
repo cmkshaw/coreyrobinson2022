@@ -7,6 +7,8 @@ type PostType = {
   coverImage: string
   author: Author
   excerpt: string
+  publisher?: string
+  "co-author"?: string
   ogImage: {
     url: string
   }
