@@ -10,6 +10,7 @@ import Head from 'next/head'
 import markdownToHtml from '../../lib/markdownToHtml'
 import type PostType from '../../interfaces/post'
 import { SITE_NAME } from '../../lib/constants'
+import { openStdin } from 'process'
 
 type Props = {
   post: PostType
@@ -37,6 +38,7 @@ export default function Post({ post, morePosts, preview }: Props) {
               </Head>
               <PostHeader
                 publisher={post.publisher}
+                coauthor={post.coauthor}
                 title={post.title}
                 date={post.date}
               />
@@ -62,6 +64,7 @@ export async function getStaticProps({ params }: Params) {
     'slug',
     'author',
     'content',
+    'coauthor',
     'publisher', 
   ], publicationsDirectory)
 

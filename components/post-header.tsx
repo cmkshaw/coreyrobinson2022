@@ -1,21 +1,20 @@
-import DateFormatter from './date-formatter'
 import PostTitle from './post-title'
 
 type Props = {
   title: string
   date: string
   publisher?: string
-  "co-author"?: string
+  coauthor?: string
 }
 
-const PostHeader = ({ title, date, publisher }: Props) => {
+const PostHeader = ({ title, date, publisher, coauthor }: Props) => {
   return (
     <>
       <PostTitle title={title}/>
       <div className="max-w-2xl mx-auto">
         <div className="mb-6 text-lg">
-          <h2 className="py-4 text-2xl">{publisher}</h2>
-          {/* <DateFormatter dateString={date} /> */}
+          {publisher && <h2 className="py-4 text-2xl">{publisher}</h2>}
+          {coauthor && <h3>Co-authored with {coauthor}</h3>}
         </div>
       </div>
     </>
