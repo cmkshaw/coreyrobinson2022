@@ -5,7 +5,7 @@ const About = () => {
           <img width="320" src="/assets/corey-robinson-headshot.png" alt="Portrait of Dr. Corey Robinson"/>
         </div>
           <div className="">
-            <h1 className="text-5xl md:text-7xl tracking-tighter leading-tight mb-4 md:pr-8">
+            <h1 className="text-5xl md:text-7xl tracking-tighter leading-tight mb-4 md:pb-6">
             Corey Robinson
           </h1>
           <h2 className="text-2xl mb-6">

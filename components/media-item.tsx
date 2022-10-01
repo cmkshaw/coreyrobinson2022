@@ -14,6 +14,7 @@ type Props = {
 const PublicationItem = ({
   title,
   date,
+  excerpt,
   slug,
   publisher,
 }: Props) => {
@@ -25,14 +26,14 @@ const PublicationItem = ({
         </div>
         <div>
           <h3 className="text-6xl mb-3 leading-tight">
-            <Link as={`/publications/${slug}`} href="/publications/[slug]">
+            <Link as={`/media/${slug}`} href="/media/[slug]">
               <a className="hover:underline">{title}</a>
             </Link>
           </h3>
           <DateFormatter dateString={date} />
         </div>
       </div>
-      <Separator/>
+      <Separator type="border-blue"/>
     </Container>
   )
 }

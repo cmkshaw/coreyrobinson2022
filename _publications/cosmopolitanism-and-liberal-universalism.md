@@ -1,6 +1,6 @@
 ---
 title: 'Cosmopolitanism and Liberal Universalism in International Relations Theory: Moralising Politics or Politicising Ethics?'
-publisher: 'the Conversation'
+publisher: 'Millennium: Journal of International Studies'
 date: '2013-09-24'
 ---
 

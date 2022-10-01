@@ -56,6 +56,15 @@
     background-size: 2% 2px;
   }
 
+  .border-blue {
+    background-image: linear-gradient(to right, #2727E6 0 50%, transparent 50% 100%), linear-gradient(to right, #2727E6 0 50%, transparent 50% 100%);
+  }
+
+  .border-blue:before, 
+  .border-blue:after {
+    color: #2727E6;
+  }
+
   .dashed-border:before {
     content: "•";
     position: absolute;

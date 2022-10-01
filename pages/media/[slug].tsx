@@ -5,7 +5,7 @@ import PostBody from '../../components/post-body'
 import Header from '../../components/header'
 import PostHeader from '../../components/post-header'
 import Layout from '../../components/layout'
-import { getPostBySlug, getAllPublications, publicationsDirectory } from '../../lib/api'
+import { getPostBySlug, getAllMedia, mediaDirectory } from '../../lib/api'
 import PostTitle from '../../components/post-title'
 import Head from 'next/head'
 import markdownToHtml from '../../lib/markdownToHtml'
@@ -64,8 +64,8 @@ export async function getStaticProps({ params }: Params) {
     'content',
     'ogImage',
     'coverImage', 
-  ], publicationsDirectory)
-
+  ], mediaDirectory)
+  
   const content = await markdownToHtml(post.content || '')
 
   return {
@@ -79,7 +79,7 @@ export async function getStaticProps({ params }: Params) {
 }
 
 export async function getStaticPaths() {
-  const posts = getAllPublications(['slug'])
+  const posts = getAllMedia(['slug'])
 
   return {
     paths: posts.map((post) => {
