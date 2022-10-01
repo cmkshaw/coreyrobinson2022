@@ -1,6 +1,6 @@
 const About = () => {
     return (
-      <section className="pt-20 md:pt-40 grid sm:grid-cols-1 md:grid-cols-[400px_minmax(auto,_1fr)]">
+      <section className="pt-20 md:pt-36 grid sm:grid-cols-1 md:grid-cols-[400px_minmax(auto,_1fr)]">
         <div className="bg-tiny-sphere pt-8">
           <img width="320" src="/assets/corey-robinson-headshot.png" alt="Portrait of Dr. Corey Robinson"/>
         </div>
