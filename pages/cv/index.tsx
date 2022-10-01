@@ -13,7 +13,7 @@ export default function CV() {
         </Head>
         <PageHeader title="CV"/>
         <Container>
-            TODO
+            Add CV here
         </Container>
       </Layout>
     </>

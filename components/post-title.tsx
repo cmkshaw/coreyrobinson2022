@@ -1,14 +1,12 @@
-import { ReactNode } from 'react'
-
 type Props = {
-  children?: ReactNode
+  title?: string,
 }
 
-const PostTitle = ({ children }: Props) => {
+const PostTitle = ({ title }: Props) => {
   return (
-    <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tighter leading-tight md:leading-none mb-12 text-center md:text-left">
-      {children}
-    </h1>
+    <div className="py-16 bg-small-sphere">
+     <h1 className="py-4 leading-tight text-6xl md:text-7xl">{title}</h1>
+    </div>
   )
 }
 

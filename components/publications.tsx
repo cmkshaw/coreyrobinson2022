@@ -22,7 +22,7 @@ const Publications = ({ posts, media }: Props) => {
           />
         ))}
       </div>
-      <div>
+      <div className="pb-24">
       <Container>
           <div className="py-16">
               <h2 className="text-7xl">Media</h2>

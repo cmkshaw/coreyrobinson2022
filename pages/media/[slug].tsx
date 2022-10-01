@@ -26,7 +26,7 @@ export default function Post({ post, morePosts, preview }: Props) {
     <Layout preview={preview}>
       <Container>
         {router.isFallback ? (
-          <PostTitle>Loading…</PostTitle>
+          <div>Loading</div>
         ) : (
           <>
             <article className="mb-32">
@@ -36,6 +36,7 @@ export default function Post({ post, morePosts, preview }: Props) {
                 </title>
               </Head>
               <PostHeader
+                publisher={post.publisher}
                 title={post.title}
                 date={post.date}
               />
@@ -61,8 +62,7 @@ export async function getStaticProps({ params }: Params) {
     'slug',
     'author',
     'content',
-    'ogImage',
-    'coverImage', 
+    'publisher'
   ], mediaDirectory)
   
   const content = await markdownToHtml(post.content || '')

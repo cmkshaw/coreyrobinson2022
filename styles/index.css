@@ -35,6 +35,20 @@
     background-position: top left;
   }
 
+  .bg-small-sphere:before{
+    position: absolute;
+    overflow: visible;
+    opacity:0.6;
+    content: '';
+    background-image: url("/assets/layout/sphere-small.svg");
+    background-size: 300px 300px;
+    background-repeat: no-repeat;
+    height: 300px;
+    width: 300px;
+    left: 0;
+    bottom: 0;
+  }
+
   .bg-noise {
     color: white;
     background-image: url("/assets/layout/noise-bg.png");
