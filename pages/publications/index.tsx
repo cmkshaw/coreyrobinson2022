@@ -6,6 +6,7 @@ import Post from '../../interfaces/post'
 import { getAllMedia, getAllPublications } from '../../lib/api'
 import PageHeader from '../../components/page-header'
 import { SITE_NAME } from '../../lib/constants'
+import ScrollArrow from '../../components/scrolltop'
 
 type Props = {
   allPosts: Post[]
@@ -22,6 +23,7 @@ export default function Index({ allPosts, allMedia }: Props) {
         <PageHeader title="Publications"/>
           {allPosts.length > 0 && <Publications posts={allPosts} media={allMedia} />}
       </Layout>
+      <ScrollArrow/>
     </>
   )
 }
