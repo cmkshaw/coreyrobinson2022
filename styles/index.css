@@ -1,3 +1,46 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Add some breathing room to the paragraph tags */
+@layer base {
+    * {
+        font-family: "Satoshi"
+    }
+    p {
+      @apply mb-4;
+      @apply text-xl;
+    }
+    /* https://tailwindcss.com/docs/adding-base-styles */
+    @font-face {
+        font-family: Satoshi;
+        font-weight: 400;
+        src: url(/fonts/satoshi/regular.woff) format("woff");
+      }
+    @font-face {
+        font-family: Satoshi;
+        font-weight: 500;
+        src: url(/fonts/satoshi/medium.woff) format("woff");
+    }
+    @font-face {
+        font-family: Satoshi;
+        font-weight: 700;
+        src: url(/fonts/satoshi/bold.woff) format("woff");
+    }
+  }
+
+  .bg-tiny-sphere{
+    background-image: url("/assets/layout/sphere-tiny.svg");
+    background-repeat: no-repeat;
+    background-position: top left;
+  }
+
+  .bg-noise {
+    color: white;
+    background-image: url("/assets/layout/noise-bg.png");
+  }
+
+  .bg-noise-sphere {
+    color: white;
+    background: url("/assets/layout/sphere-reverse.svg") center bottom no-repeat, url("/assets/layout/noise-bg.png") left top repeat;
+  }

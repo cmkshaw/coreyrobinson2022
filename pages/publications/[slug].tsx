@@ -5,7 +5,7 @@ import PostBody from '../../components/post-body'
 import Header from '../../components/header'
 import PostHeader from '../../components/post-header'
 import Layout from '../../components/layout'
-import { getPostBySlug, getAllPosts, postsDirectory } from '../../lib/api'
+import { getPostBySlug, getAllPosts, publicationsDirectory } from '../../lib/api'
 import PostTitle from '../../components/post-title'
 import Head from 'next/head'
 import markdownToHtml from '../../lib/markdownToHtml'
@@ -67,7 +67,7 @@ export async function getStaticProps({ params }: Params) {
     'content',
     'ogImage',
     'coverImage', 
-  ], postsDirectory)
+  ], publicationsDirectory)
   const content = await markdownToHtml(post.content || '')
 
   return {
