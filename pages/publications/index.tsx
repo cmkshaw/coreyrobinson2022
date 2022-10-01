@@ -1,5 +1,5 @@
 import Container from '../../components/container'
-import MoreStories from '../../components/more-stories'
+import Publications from '../../components/publications'
 import Layout from '../../components/layout'
 import Head from 'next/head'
 import Post from '../../interfaces/post'
@@ -17,7 +17,7 @@ export default function Index({ allPosts }: Props) {
           <title>Next.js Blog Example</title>
         </Head>
         <Container>
-          {allPosts.length > 0 && <MoreStories posts={allPosts} />}
+          {allPosts.length > 0 && <Publications posts={allPosts} />}
         </Container>
       </Layout>
     </>
