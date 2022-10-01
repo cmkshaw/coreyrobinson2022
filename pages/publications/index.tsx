@@ -5,6 +5,7 @@ import Head from 'next/head'
 import Post from '../../interfaces/post'
 import { getAllPublications } from '../../lib/api'
 import PageHeader from '../../components/page-header'
+import { SITE_NAME } from '../../lib/constants'
 
 type Props = {
   allPosts: Post[]
@@ -15,7 +16,7 @@ export default function Index({ allPosts }: Props) {
     <>
       <Layout>
         <Head>
-          <title>Next.js Blog Example</title>
+          <title>Publications | {SITE_NAME}</title>
         </Head>
         <PageHeader title="Publications"/>
         <div className="bg-noise">
