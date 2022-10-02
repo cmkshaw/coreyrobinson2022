@@ -9,7 +9,7 @@ const About = () => {
         />
       </div>
       <div className="">
-        <h1 className="text-5xl md:text-7xl tracking-tighter leading-tight mb-4 md:pb-6">
+        <h1 className="text-5xl md:text-8xl tracking-tighter leading-tight mb-4 md:pb-6">
           Corey Robinson
         </h1>
         <h2 className="text-2xl mb-6">

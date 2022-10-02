@@ -23,8 +23,8 @@ module.exports = {
         "p-custom": "1.25rem",
         "5xl": "2.5rem",
         "6xl": "2.75rem",
-        "7xl": "4.5rem",
-        "8xl": "6.25rem",
+        "7xl": "3.65rem",
+        "8xl": "4.5rem",
       },
       boxShadow: {
         sm: "0 5px 10px rgba(0, 0, 0, 0.12)",

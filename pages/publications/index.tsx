@@ -41,7 +41,7 @@ export default function Index({ allPosts, allMedia }: Props) {
             <div className="pb-36">
               <Container>
                 <div className="pt-16 pb-4">
-                  <h2 className="text-6xl md:text-7xl">Media</h2>
+                  <h2 className="text-6xl md:text-8xl">Media</h2>
                 </div>
               </Container>
               {allMedia.map((post) => (
