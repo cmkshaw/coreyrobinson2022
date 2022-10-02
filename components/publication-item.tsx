@@ -1,4 +1,4 @@
-import DateFormatter from "./date-formatter";
+import DateFormatter from "./utils/date-formatter";
 import Link from "next/link";
 import { Separator } from "./separator";
 import Container from "./../components/container";

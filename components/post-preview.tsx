@@ -1,6 +1,5 @@
-import DateFormatter from "./date-formatter";
+import DateFormatter from "./utils/date-formatter";
 import Link from "next/link";
-import type Author from "../interfaces/author";
 
 type Props = {
   title: string;
