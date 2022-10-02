@@ -3,6 +3,7 @@ title: 'Knowledge controversies of global migration governance: understanding th
 coauthor: 'Scott Watson'
 publisher: 'Research Handbook on the Law and Politics of Migration, edited by Catherine Dauvergne, Edward Elgar Press'
 date: '2021'
+url: 'https://www.academia.edu/49198394/Knowledge_controversies_of_global_migration_governance_understanding_the_controversy_surrounding_the_Global_Compact'
 ---
 
 In this chapter, we explore the nature of the controversies that arose during the negotiation of the Compact for Safe, Orderly and Regular Migration, the impact of designing negotiations as a ‘hybrid forum’ to contain these controversies, and the ‘excess’ controversies that emerged outside of the official negotiation process that ultimately influenced final adoption of the agreement. 

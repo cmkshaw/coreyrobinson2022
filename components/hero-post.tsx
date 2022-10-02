@@ -6,14 +6,12 @@ import Link from 'next/link'
 type Props = {
   title: string
   date: string
-  excerpt: string
   slug: string
 }
 
 const HeroPost = ({
   title,
   date,
-  excerpt,
   slug,
 }: Props) => {
   return (
@@ -32,7 +30,7 @@ const HeroPost = ({
             </div>
           </div>
           <div className="pb-12">
-          <Link href="/publications"><a className="text-3xl">All publications</a></Link>
+          <Link href="/publications"><a className="text-3xl hover:underline">All publications</a></Link>
           </div>
         </Container>
       </div>

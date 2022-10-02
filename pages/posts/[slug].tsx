@@ -5,11 +5,9 @@ import PostBody from '../../components/post-body'
 import PostHeader from '../../components/post-header'
 import Layout from '../../components/layout'
 import { getPostBySlug, getAllPosts, postsDirectory } from '../../lib/api'
-import PostTitle from '../../components/post-title'
-import Head from 'next/head'
+import PostHead from '../../components/post-head'
 import markdownToHtml from '../../lib/markdownToHtml'
 import type PostType from '../../interfaces/post'
-import { SITE_NAME } from '../../lib/constants'
 
 type Props = {
   post: PostType
@@ -30,12 +28,7 @@ export default function Post({ post, morePosts, preview }: Props) {
         ) : (
           <>
             <article className="mb-32">
-              <Head>
-                <title>
-                  {post.title} | {SITE_NAME}
-                </title>
-                <meta property="og:image" content={post.ogImage.url} />
-              </Head>
+              <PostHead title={post.title}/>
               <PostHeader
                 title={post.title}
                 date={post.date}
@@ -60,10 +53,7 @@ export async function getStaticProps({ params }: Params) {
     'title',
     'date',
     'slug',
-    'author',
     'content',
-    'ogImage',
-    'coverImage', 
   ], postsDirectory)
   const content = await markdownToHtml(post.content || '')
 

@@ -2,6 +2,7 @@
 title: 'Tracing and explaining securitization: Social mechanisms, process tracing and the securitization of irregular migration'
 publisher: 'Security Dialogue'
 date: '2017-10-25'
+url: 'Tracing and explaining securitization: Social mechanisms, process tracing and the securitization of irregular migration'
 ---
 
 This article offers a process-mechanism explanation of securitization. To make the case for a process-mechanism account more concrete, I use interpretivist process tracing to explain the crisis episode of the Sun Sea, a Thai cargo ship carrying Sri Lankan asylum-seekers, and the securitization of irregular migration in Canada.

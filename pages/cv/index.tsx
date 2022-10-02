@@ -13,7 +13,7 @@ export default function CV() {
         </Head>
         <PageHeader title="CV"/>
         <Container>
-            Add CV here
+          <iframe width="100%" height="800px" id="cv" src="/assets/cvs/corey-robinson-cv-usa-september-2022.pdf"></iframe>
         </Container>
       </Layout>
     </>

@@ -14,7 +14,6 @@ type Props = {
 const PublicationItem = ({
   title,
   date,
-  excerpt,
   slug,
   publisher,
 }: Props) => {

@@ -2,6 +2,7 @@
 title: 'Making migration knowable and governable: Benchmarking practices as technologies of global migration governance'
 publisher: 'International Political Sociology'
 date: '2018-12-07'
+url: 'https://academic.oup.com/ips/advance-article-abstract/doi/10.1093/ips/oly020/5128869'
 ---
 
 Using the theoretical toolkit of material-semiotics, this article theorizes global migration governance as a governing technology that constitutes migration as an object of global governance. 

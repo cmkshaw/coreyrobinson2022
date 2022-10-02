@@ -5,12 +5,9 @@ import PostBody from '../../components/post-body'
 import PostHeader from '../../components/post-header'
 import Layout from '../../components/layout'
 import { getPostBySlug, getAllPublications, publicationsDirectory } from '../../lib/api'
-import PostTitle from '../../components/post-title'
-import Head from 'next/head'
 import markdownToHtml from '../../lib/markdownToHtml'
 import type PostType from '../../interfaces/post'
-import { SITE_NAME } from '../../lib/constants'
-import { openStdin } from 'process'
+import PostHead from '../../components/post-head'
 
 type Props = {
   post: PostType
@@ -18,7 +15,7 @@ type Props = {
   preview?: boolean
 }
 
-export default function Post({ post, morePosts, preview }: Props) {
+export default function Post({ post, preview }: Props) {
   const router = useRouter()
   if (!router.isFallback && !post?.slug) {
     return <ErrorPage statusCode={404} />
@@ -31,18 +28,14 @@ export default function Post({ post, morePosts, preview }: Props) {
         ) : (
           <>
             <article className="mb-32">
-              <Head>
-                <title>
-                  {post.title} | {SITE_NAME}
-                </title>
-              </Head>
+              <PostHead title={post.title}/>
               <PostHeader
                 publisher={post.publisher}
                 coauthor={post.coauthor}
                 title={post.title}
                 date={post.date}
               />
-              <PostBody content={post.content} />
+              <PostBody type="publication" content={post.content} url={post.url} />
             </article>
           </>
         )}
@@ -58,6 +51,7 @@ type Params = {
 }
 
 export async function getStaticProps({ params }: Params) {
+
   const post = getPostBySlug(params.slug, [
     'title',
     'date',
@@ -66,6 +60,7 @@ export async function getStaticProps({ params }: Params) {
     'content',
     'coauthor',
     'publisher', 
+    'url'
   ], publicationsDirectory)
 
   const content = await markdownToHtml(post.content || '')

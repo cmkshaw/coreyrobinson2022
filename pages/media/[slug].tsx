@@ -5,11 +5,9 @@ import PostBody from '../../components/post-body'
 import PostHeader from '../../components/post-header'
 import Layout from '../../components/layout'
 import { getPostBySlug, getAllMedia, mediaDirectory } from '../../lib/api'
-import PostTitle from '../../components/post-title'
-import Head from 'next/head'
 import markdownToHtml from '../../lib/markdownToHtml'
 import type PostType from '../../interfaces/post'
-import { SITE_NAME } from '../../lib/constants'
+import PostHead from '../../components/post-head'
 
 type Props = {
   post: PostType
@@ -17,7 +15,7 @@ type Props = {
   preview?: boolean
 }
 
-export default function Post({ post, morePosts, preview }: Props) {
+export default function Post({ post, preview }: Props) {
   const router = useRouter()
   if (!router.isFallback && !post?.slug) {
     return <ErrorPage statusCode={404} />
@@ -30,17 +28,13 @@ export default function Post({ post, morePosts, preview }: Props) {
         ) : (
           <>
             <article className="mb-32">
-              <Head>
-                <title>
-                  {post.title} | {SITE_NAME}
-                </title>
-              </Head>
+              <PostHead title={post.title}/>
               <PostHeader
                 publisher={post.publisher}
                 title={post.title}
                 date={post.date}
               />
-              <PostBody content={post.content} />
+              <PostBody type="media" content={post.content} url={post.url} />
             </article>
           </>
         )}
@@ -62,7 +56,8 @@ export async function getStaticProps({ params }: Params) {
     'slug',
     'author',
     'content',
-    'publisher'
+    'publisher',
+    'url'
   ], mediaDirectory)
   
   const content = await markdownToHtml(post.content || '')

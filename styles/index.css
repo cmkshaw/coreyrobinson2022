@@ -4,7 +4,8 @@
 
 /* Add some breathing room to the paragraph tags */
 @layer base {
-    * {
+    * { 
+      /* todo: add backup fonts */
         font-family: "Satoshi"
     }
     p {
@@ -110,7 +111,7 @@
     margin-bottom: 25px;
   }
   
-  .scrollTop:hover{
+  .scrollTop:hover {
     opacity: 1;
   }
   
@@ -121,4 +122,8 @@
     100% {
       opacity: 0.8;
     }
+  }
+
+  .flip {
+    transform: scaleX(-1);
   }

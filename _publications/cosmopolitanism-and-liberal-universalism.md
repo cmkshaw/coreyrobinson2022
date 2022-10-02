@@ -2,6 +2,7 @@
 title: 'Cosmopolitanism and Liberal Universalism in International Relations Theory: Moralising Politics or Politicising Ethics?'
 publisher: 'Millennium: Journal of International Studies'
 date: '2013-09-24'
+url: 'https://journals.sagepub.com/doi/abs/10.1177/0305829813492834?journalCode=mila'
 ---
 
 Mapping out the constellation between liberal universalism, cosmopolitanism and International Relations (IR) theory, the following works explicitly politicise the ethics of contemporary cosmopolitanism, thereby responding to the criticism that cosmopolitan theory offers little more than a moralisation of politics. 

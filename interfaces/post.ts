@@ -9,6 +9,7 @@ type PostType = {
   excerpt: string
   publisher?: string
   coauthor?: string
+  url?: string
   ogImage: {
     url: string
   }

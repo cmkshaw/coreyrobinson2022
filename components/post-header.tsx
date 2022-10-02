@@ -7,7 +7,7 @@ type Props = {
   coauthor?: string
 }
 
-const PostHeader = ({ title, date, publisher, coauthor }: Props) => {
+const PostHeader = ({ title, publisher, coauthor }: Props) => {
   return (
     <>
       <PostTitle title={title}/>
