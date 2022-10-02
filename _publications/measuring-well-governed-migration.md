@@ -1,7 +1,9 @@
 ---
 title: "Measuring ‘Well-Governed’ Migration: The IOM’s Migration Governance Indicators"
-publisher: "The International Organization for Migration: The New ‘UN Migration Agency’ in Critical Perspective, edited by Martin Geiger and Antoine Pécoud, Palgrave Macmillan, International Political Economy Series"
+publisher: "The International Organization for Migration: The New ‘UN Migration Agency’ in Critical Perspective"
 date: "2020-02-19"
+editor: Martin Geiger and Antoine Pécoud
+press: Palgrave Macmillan, International Political Economy Series
 url: "https://link.springer.com/chapter/10.1007/978-3-030-32976-1_6"
 ---
 

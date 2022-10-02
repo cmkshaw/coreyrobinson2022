@@ -32,6 +32,7 @@ const Meta = () => {
       <meta name="msapplication-config" content="/favicon/browserconfig.xml" />
       <meta name="theme-color" content="#000" />
       <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
+      <link rel="preload" as="image" href="/assets/layout/sphere-small.svg" />
       <meta name="description" content={HOME_OG_DESC} />
       <meta property="og:image" content={HOME_OG_IMAGE_URL} />
     </Head>

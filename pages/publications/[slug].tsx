@@ -42,6 +42,8 @@ export default function Post({ post, preview, latestPublication }: Props) {
               <PostHeader
                 publisher={post.publisher}
                 coauthor={post.coauthor}
+                editor={post.editor}
+                press={post.press}
                 title={post.title}
                 date={post.date}
               />
@@ -85,6 +87,8 @@ export async function getStaticProps({ params }: Params) {
       "coauthor",
       "publisher",
       "url",
+      "press",
+      "editor",
     ],
     publicationsDirectory
   );

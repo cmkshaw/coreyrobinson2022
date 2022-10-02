@@ -8,6 +8,8 @@ type PostType = {
   author: Author;
   excerpt: string;
   publisher?: string;
+  press?: string;
+  editor?: string;
   coauthor?: string;
   url?: string;
   ogImage: {

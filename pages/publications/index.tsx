@@ -24,36 +24,37 @@ export default function Index({ allPosts, allMedia }: Props) {
         <PageHeader title="Publications" />
         {allPosts.length > 0 && (
           <section className="bg-bottom-sphere">
-          <div className="pb-24 bg-noise-sphere">
-            <div className="bg-side-sphere">
-            {allPosts.map((post) => (
-              <PublicationItem
-                key={post.slug}
-                title={post.title}
-                date={post.date}
-                slug={post.slug}
-                publisher={post.publisher}
-              />
-            ))}
-            </div>
-          </div>
-          <div className="pb-36">
-            <Container>
-              <div className="py-16">
-                <h2 className="text-7xl">Media</h2>
+            <div className="pb-24 bg-noise-sphere">
+              <div className="bg-side-sphere">
+                {allPosts.map((post) => (
+                  <PublicationItem
+                    key={post.slug}
+                    title={post.title}
+                    date={post.date}
+                    slug={post.slug}
+                    publisher={post.publisher}
+                    editor={post.editor}
+                  />
+                ))}
               </div>
-            </Container>
-            {allMedia.map((post) => (
-              <MediaItem
-                key={post.slug}
-                title={post.title}
-                date={post.date}
-                slug={post.slug}
-                publisher={post.publisher}
-              />
-            ))}
-          </div>
-        </section>
+            </div>
+            <div className="pb-36">
+              <Container>
+                <div className="py-16">
+                  <h2 className="text-7xl">Media</h2>
+                </div>
+              </Container>
+              {allMedia.map((post) => (
+                <MediaItem
+                  key={post.slug}
+                  title={post.title}
+                  date={post.date}
+                  slug={post.slug}
+                  publisher={post.publisher}
+                />
+              ))}
+            </div>
+          </section>
         )}
       </Layout>
       <ScrollArrow />
@@ -62,7 +63,13 @@ export default function Index({ allPosts, allMedia }: Props) {
 }
 
 export const getStaticProps = async () => {
-  const allPosts = getAllPublications(["title", "date", "slug", "publisher"]);
+  const allPosts = getAllPublications([
+    "title",
+    "date",
+    "slug",
+    "publisher",
+    "editor",
+  ]);
   const allMedia = getAllMedia(["title", "date", "slug", "publisher"]);
 
   return {

@@ -1,7 +1,9 @@
 ---
 title: "Knowledge controversies of global migration governance: understanding the controversy surrounding the Global Compact"
 coauthor: "Scott Watson"
-publisher: "Research Handbook on the Law and Politics of Migration, edited by Catherine Dauvergne, Edward Elgar Press"
+publisher: "Research Handbook on the Law and Politics of Migration"
+press: "Edward Elgar Press"
+editor: "Catherine Dauvergne"
 date: "2021"
 url: "https://www.academia.edu/49198394/Knowledge_controversies_of_global_migration_governance_understanding_the_controversy_surrounding_the_Global_Compact"
 ---
