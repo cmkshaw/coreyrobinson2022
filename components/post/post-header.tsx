@@ -13,7 +13,7 @@ const PostHeader = ({ title, publisher, coauthor }: Props) => {
       <PostTitle title={title} />
       <div className="max-w-2xl mx-auto">
         <div className="mb-6 text-lg">
-          {publisher && <h2 className="py-4 text-2xl">{publisher}</h2>}
+          {publisher && <h2 className="py-6 text-4xl">{publisher}</h2>}
           {coauthor && <h3>Co-authored with {coauthor}</h3>}
         </div>
       </div>

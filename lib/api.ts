@@ -63,6 +63,14 @@ export function getAllPublications(fields: string[] = []) {
   return pubs;
 }
 
+export function getLatestPublication(fields: string[] = []) {
+  const slugs = getPubSlugs();
+  const pubs = slugs
+    .map((slug) => getPostBySlug(slug, fields, publicationsDirectory))
+    .sort((post1, post2) => (post1.date > post2.date ? -1 : 1));
+  return pubs[0];
+}
+
 // Todo get latest publication
 // Reduce repetition
 

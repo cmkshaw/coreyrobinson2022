@@ -1,7 +1,7 @@
 import DateFormatter from "./utils/date-formatter";
 import Link from "next/link";
-import { Separator } from "./separator";
-import Container from "./../components/container";
+import { Separator } from "./layout/separator";
+import Container from "./layout/container";
 
 type Props = {
   title: string;

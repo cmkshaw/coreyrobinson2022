@@ -1,18 +1,16 @@
-import Container from "../components/container";
+import Container from "../components/layout/container";
 import HeroPost from "../components/hero-post";
-import About from "../components/about";
-import Layout from "../components/layout";
-import { getAllPublications } from "../lib/api";
+import About from "../components/content/about";
+import Layout from "../components/layout/layout";
+import { getLatestPublication } from "../lib/api";
 import Head from "next/head";
 import Post from "../interfaces/post";
-import Link from "next/link";
 
 type Props = {
-  allPosts: Post[];
+  latestPost: Post;
 };
 
-export default function Index({ allPosts }: Props) {
-  const heroPost = allPosts[0];
+export default function Index({ latestPost }: Props) {
   return (
     <>
       <Layout>
@@ -25,11 +23,11 @@ export default function Index({ allPosts }: Props) {
         <Container>
           <About />
         </Container>
-        {heroPost && (
+        {latestPost && (
           <HeroPost
-            title={heroPost.title}
-            date={heroPost.date}
-            slug={heroPost.slug}
+            title={latestPost.title}
+            date={latestPost.date}
+            slug={latestPost.slug}
           />
         )}
       </Layout>
@@ -38,9 +36,9 @@ export default function Index({ allPosts }: Props) {
 }
 
 export const getStaticProps = async () => {
-  const allPosts = getAllPublications(["title", "date", "slug"]);
+  const latestPost = getLatestPublication(["title", "date", "slug"]);
 
   return {
-    props: { allPosts },
+    props: { latestPost },
   };
 };

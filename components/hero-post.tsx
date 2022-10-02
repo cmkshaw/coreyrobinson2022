@@ -1,5 +1,5 @@
 import DateFormatter from "./utils/date-formatter";
-import Container from "../components/container";
+import Container from "./layout/container";
 import Link from "next/link";
 
 type Props = {

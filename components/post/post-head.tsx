@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { SITE_NAME } from "../lib/constants";
+import { SITE_NAME } from "../../lib/constants";
 
 type Props = {
   title: string;

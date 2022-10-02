@@ -1,6 +1,6 @@
-import Container from "../../components/container";
-import Layout from "../../components/layout";
-import PageHeader from "../../components/page-header";
+import Container from "../../components/layout/container";
+import Layout from "../../components/layout/layout";
+import PageHeader from "../../components/layout/page-header";
 import Head from "next/head";
 import { SITE_NAME } from "../../lib/constants";
 
