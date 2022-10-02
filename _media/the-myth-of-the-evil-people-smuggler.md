@@ -2,6 +2,7 @@
 title: "Debunking the myth of the ‘evil people smuggler’"
 publisher: "The Conversation"
 date: "2022-07-22"
+url: "https://theconversation.com/debunking-the-myth-of-the-evil-people-smuggler-187059"
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilities morbi tempus. Praesent elementum facilisis leo vel fringilla. Congue mauris rhoncus aenean vel. Egestas sed tempus urna et pharetra pharetra massa massa ultricies.
+My latest piece with Yvonne Su (York University), Debunking the myth of the ‘evil people smuggler’ is out in The Conversation.
