@@ -4,126 +4,133 @@
 
 /* Add some breathing room to the paragraph tags */
 @layer base {
-    * { 
-      /* todo: add backup fonts */
-        font-family: "Satoshi"
-    }
-    p {
-      @apply mb-4;
-      @apply text-xl;
-    }
-    /* https://tailwindcss.com/docs/adding-base-styles */
-    @font-face {
-        font-family: Satoshi;
-        font-weight: 400;
-        src: url(/fonts/satoshi/regular.woff) format("woff");
-      }
-    @font-face {
-        font-family: Satoshi;
-        font-weight: 500;
-        src: url(/fonts/satoshi/medium.woff) format("woff");
-    }
-    @font-face {
-        font-family: Satoshi;
-        font-weight: 700;
-        src: url(/fonts/satoshi/bold.woff) format("woff");
-    }
+  * {
+    /* todo: add backup fonts */
+    font-family: "Satoshi";
   }
+  p {
+    @apply mb-4;
+    @apply text-xl;
+  }
+  /* https://tailwindcss.com/docs/adding-base-styles */
+  @font-face {
+    font-family: Satoshi;
+    font-weight: 400;
+    src: url(/fonts/satoshi/regular.woff) format("woff");
+  }
+  @font-face {
+    font-family: Satoshi;
+    font-weight: 500;
+    src: url(/fonts/satoshi/medium.woff) format("woff");
+  }
+  @font-face {
+    font-family: Satoshi;
+    font-weight: 700;
+    src: url(/fonts/satoshi/bold.woff) format("woff");
+  }
+}
 
-  .bg-tiny-sphere{
-    background-image: url("/assets/layout/sphere-tiny.svg");
-    background-repeat: no-repeat;
-    background-position: top left;
-  }
+.bg-tiny-sphere {
+  background-image: url("/assets/layout/sphere-tiny.svg");
+  background-repeat: no-repeat;
+  background-position: top left;
+}
 
-  .bg-small-sphere:before{
-    position: absolute;
-    overflow: visible;
-    opacity:0.6;
-    content: '';
-    background-image: url("/assets/layout/sphere-small.svg");
-    background-size: 300px 300px;
-    background-repeat: no-repeat;
-    height: 300px;
-    width: 300px;
-    left: 0;
-    bottom: 0;
-  }
+.bg-small-sphere:before {
+  position: absolute;
+  overflow: visible;
+  opacity: 0.6;
+  content: "";
+  background-image: url("/assets/layout/sphere-small.svg");
+  background-size: 300px 300px;
+  background-repeat: no-repeat;
+  height: 300px;
+  width: 300px;
+  left: 0;
+  bottom: 0;
+}
 
-  .bg-noise {
-    color: white;
-    background-image: url("/assets/layout/noise-bg.png");
-  }
+.bg-noise {
+  color: white;
+  background-image: url("/assets/layout/noise-bg.png");
+}
 
-  .bg-noise-sphere {
-    color: white;
-    background: url("/assets/layout/sphere-reverse.svg") center bottom no-repeat, url("/assets/layout/noise-bg.png") left top repeat;
-  }
+.bg-noise-sphere {
+  color: white;
+  background: url("/assets/layout/sphere-reverse.svg") center bottom no-repeat,
+    url("/assets/layout/noise-bg.png") left top repeat;
+}
 
-  .dashed-border {
-    opacity: 0.5;
-    padding: 1vmin;
-    overflow: visible;
-    border: 0;
-    position: relative;
-    background-image: linear-gradient(to right, #fff 0 50%, transparent 50% 100%), linear-gradient(to right, #fff 0 50%, transparent 50% 100%);
-    background-repeat: repeat no-repeat;
-    background-size: 2% 2px;
-  }
+.dashed-border {
+  opacity: 0.5;
+  padding: 1vmin;
+  overflow: visible;
+  border: 0;
+  position: relative;
+  background-image: linear-gradient(to right, #fff 0 50%, transparent 50% 100%),
+    linear-gradient(to right, #fff 0 50%, transparent 50% 100%);
+  background-repeat: repeat no-repeat;
+  background-size: 2% 2px;
+}
 
-  .border-blue {
-    background-image: linear-gradient(to right, #2727E6 0 50%, transparent 50% 100%), linear-gradient(to right, #2727E6 0 50%, transparent 50% 100%);
-  }
+.border-blue {
+  background-image: linear-gradient(
+      to right,
+      #2727e6 0 50%,
+      transparent 50% 100%
+    ),
+    linear-gradient(to right, #2727e6 0 50%, transparent 50% 100%);
+}
 
-  .border-blue:before, 
-  .border-blue:after {
-    color: #2727E6;
-  }
+.border-blue:before,
+.border-blue:after {
+  color: #2727e6;
+}
 
-  .dashed-border:before {
-    content: "•";
-    position: absolute;
-    font-size: 40px;
-    left: -4px;
-    top: -34px;
-  }
+.dashed-border:before {
+  content: "•";
+  position: absolute;
+  font-size: 40px;
+  left: -4px;
+  top: -34px;
+}
 
-  .dashed-border:after {
-    content: "•";
-    position: absolute;
-    font-size: 40px;
-    right: -4px;
-    top: -34px;
-  }
+.dashed-border:after {
+  content: "•";
+  position: absolute;
+  font-size: 40px;
+  right: -4px;
+  top: -34px;
+}
 
-  .scrollTop {
-    position: fixed; 
-    width: 100%;
-    bottom: 20px;
-    align-items: center;
-    height: 20px;
-    z-index: 1000;
-    cursor: pointer;
-    animation: fadeIn 0.3s;
-    transition: opacity 0.4s;
-    opacity: 0.5;
-    margin-left: 10px;
-    margin-bottom: 25px;
-  }
-  
-  .scrollTop:hover {
-    opacity: 1;
-  }
-  
-  @keyframes fadeIn {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 0.8;
-    }
-  }
+.scrollTop {
+  position: fixed;
+  width: 100%;
+  bottom: 20px;
+  align-items: center;
+  height: 20px;
+  z-index: 1000;
+  cursor: pointer;
+  animation: fadeIn 0.3s;
+  transition: opacity 0.4s;
+  opacity: 0.5;
+  margin-left: 10px;
+  margin-bottom: 25px;
+}
 
-  .flip {
-    transform: scaleX(-1);
+.scrollTop:hover {
+  opacity: 1;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
   }
+  100% {
+    opacity: 0.8;
+  }
+}
+
+.flip {
+  transform: scaleX(-1);
+}

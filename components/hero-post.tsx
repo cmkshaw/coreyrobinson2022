@@ -1,19 +1,14 @@
-
-import DateFormatter from './date-formatter'
-import Container from '../components/container'
-import Link from 'next/link'
+import DateFormatter from "./date-formatter";
+import Container from "../components/container";
+import Link from "next/link";
 
 type Props = {
-  title: string
-  date: string
-  slug: string
-}
+  title: string;
+  date: string;
+  slug: string;
+};
 
-const HeroPost = ({
-  title,
-  date,
-  slug,
-}: Props) => {
+const HeroPost = ({ title, date, slug }: Props) => {
   return (
     <section>
       <div className="bg-noise-sphere py-20 mt-12 md:mt-20">
@@ -30,12 +25,14 @@ const HeroPost = ({
             </div>
           </div>
           <div className="pb-12">
-          <Link href="/publications"><a className="text-3xl hover:underline">All publications</a></Link>
+            <Link href="/publications">
+              <a className="text-3xl hover:underline">All publications</a>
+            </Link>
           </div>
         </Container>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default HeroPost
+export default HeroPost;

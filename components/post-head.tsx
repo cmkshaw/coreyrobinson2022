@@ -1,18 +1,18 @@
-import Head from 'next/head'
-import { SITE_NAME } from '../lib/constants'
+import Head from "next/head";
+import { SITE_NAME } from "../lib/constants";
 
 type Props = {
-  title: string
-}
+  title: string;
+};
 
 const PostHead = ({ title }: Props) => {
   return (
     <Head>
-        <title>
+      <title>
         {title} | {SITE_NAME}
-        </title>
+      </title>
     </Head>
-  )
-}
+  );
+};
 
-export default PostHead
+export default PostHead;

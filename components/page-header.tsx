@@ -1,17 +1,17 @@
-import Container from './../components/container'
+import Container from "./../components/container";
 
 type Props = {
-  title: string
-}
+  title: string;
+};
 
 const PageHeader = ({ title }: Props) => {
   return (
     <Container>
-        <div className="py-16">
-            <h1 className="text-6xl md:text-7xl">{title}</h1>
-        </div>
+      <div className="py-16">
+        <h1 className="text-6xl md:text-7xl">{title}</h1>
+      </div>
     </Container>
-  )
-}
+  );
+};
 
-export default PageHeader
+export default PageHeader;

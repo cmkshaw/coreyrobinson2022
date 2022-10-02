@@ -1,12 +1,12 @@
-import PublicationItem from './publication-item'
-import MediaItem from './media-item'
-import type Post from '../interfaces/post'
-import Container from './../components/container'
+import PublicationItem from "./publication-item";
+import MediaItem from "./media-item";
+import type Post from "../interfaces/post";
+import Container from "./../components/container";
 
 type Props = {
-  posts: Post[]
-  media: Post[]
-}
+  posts: Post[];
+  media: Post[];
+};
 
 const Publications = ({ posts, media }: Props) => {
   return (
@@ -23,11 +23,11 @@ const Publications = ({ posts, media }: Props) => {
         ))}
       </div>
       <div className="pb-24">
-      <Container>
+        <Container>
           <div className="py-16">
-              <h2 className="text-7xl">Media</h2>
+            <h2 className="text-7xl">Media</h2>
           </div>
-      </Container>
+        </Container>
         {media.map((post) => (
           <MediaItem
             key={post.slug}
@@ -39,7 +39,7 @@ const Publications = ({ posts, media }: Props) => {
         ))}
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Publications
+export default Publications;

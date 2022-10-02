@@ -1,22 +1,17 @@
-import DateFormatter from './date-formatter'
-import Link from 'next/link'
-import { Separator } from './separator'
-import Container from './../components/container'
+import DateFormatter from "./date-formatter";
+import Link from "next/link";
+import { Separator } from "./separator";
+import Container from "./../components/container";
 
 type Props = {
-  title: string
-  date: string
-  excerpt?: string
-  slug: string
-  publisher: string
-}
+  title: string;
+  date: string;
+  excerpt?: string;
+  slug: string;
+  publisher: string;
+};
 
-const PublicationItem = ({
-  title,
-  date,
-  slug,
-  publisher,
-}: Props) => {
+const PublicationItem = ({ title, date, slug, publisher }: Props) => {
   return (
     <Container>
       <div className="py-12 gap-12 grid md:grid-cols-[250px_minmax(auto,_1fr)]">
@@ -32,9 +27,9 @@ const PublicationItem = ({
           <DateFormatter dateString={date} />
         </div>
       </div>
-      <Separator type="border-blue"/>
+      <Separator type="border-blue" />
     </Container>
-  )
-}
+  );
+};
 
-export default PublicationItem
+export default PublicationItem;

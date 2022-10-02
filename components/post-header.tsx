@@ -1,16 +1,16 @@
-import PostTitle from './post-title'
+import PostTitle from "./post-title";
 
 type Props = {
-  title: string
-  date: string
-  publisher?: string
-  coauthor?: string
-}
+  title: string;
+  date: string;
+  publisher?: string;
+  coauthor?: string;
+};
 
 const PostHeader = ({ title, publisher, coauthor }: Props) => {
   return (
     <>
-      <PostTitle title={title}/>
+      <PostTitle title={title} />
       <div className="max-w-2xl mx-auto">
         <div className="mb-6 text-lg">
           {publisher && <h2 className="py-4 text-2xl">{publisher}</h2>}
@@ -18,7 +18,7 @@ const PostHeader = ({ title, publisher, coauthor }: Props) => {
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default PostHeader
+export default PostHeader;

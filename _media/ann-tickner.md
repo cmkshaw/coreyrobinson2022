@@ -1,8 +1,8 @@
 ---
-title: 'Ann Tickner on Feminist Philosophy of Science, Engaging the Mainstream, and (still) Remaining Critical in/of IR'
-publisher: 'Theory Talks'
-date: '2013-04-22'
-url: '/assets/pdfs/theory-talk-tickner.pdf'
+title: "Ann Tickner on Feminist Philosophy of Science, Engaging the Mainstream, and (still) Remaining Critical in/of IR"
+publisher: "Theory Talks"
+date: "2013-04-22"
+url: "/assets/pdfs/theory-talk-tickner.pdf"
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilities morbi tempus. Praesent elementum facilisis leo vel fringilla. Congue mauris rhoncus aenean vel. Egestas sed tempus urna et pharetra pharetra massa massa ultricies.
