@@ -5,6 +5,8 @@ import Layout from "../components/layout/layout";
 import { getLatestPublication } from "../lib/api";
 import Head from "next/head";
 import Post from "../interfaces/post";
+import { Separator } from "../components/layout/separator";
+import Elsewhere from "../components/content/elsewhere";
 
 type Props = {
   latestPost: Post;
@@ -20,9 +22,13 @@ export default function Index({ latestPost }: Props) {
             Corey Robinson
           </title>
         </Head>
-        <Container>
-          <About />
-        </Container>
+        <div className="bg-sphere-right">
+          <Container>
+            <About />
+            <Separator type="border-blue" />
+            <Elsewhere />
+          </Container>
+        </div>
         {latestPost && (
           <HeroPost
             title={latestPost.title}

@@ -40,7 +40,7 @@ export default function Index({ allPosts, allMedia }: Props) {
             </div>
             <div className="pb-36">
               <Container>
-                <div className="py-16">
+                <div className="pt-16 pb-4">
                   <h2 className="text-7xl">Media</h2>
                 </div>
               </Container>
@@ -57,7 +57,7 @@ export default function Index({ allPosts, allMedia }: Props) {
           </section>
         )}
       </Layout>
-      <ScrollArrow />
+      {/* <ScrollArrow /> */}
     </>
   );
 }

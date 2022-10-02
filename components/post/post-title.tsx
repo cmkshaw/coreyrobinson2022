@@ -4,8 +4,10 @@ type Props = {
 
 const PostTitle = ({ title }: Props) => {
   return (
-    <div className="py-16 bg-small-sphere">
-      <h1 className="py-4 leading-tight text-6xl md:text-7xl">{title}</h1>
+    <div className="pt-16 md:pt-28 md:pb-12 bg-small-sphere">
+      <h1 className="leading-tight text-4xl md:text-6xl leading-normal">
+        {title}
+      </h1>
     </div>
   );
 };

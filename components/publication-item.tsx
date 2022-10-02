@@ -18,11 +18,11 @@ const PublicationItem = ({ title, date, slug, publisher, editor }: Props) => {
     <Container>
       <div className="py-12 gap-12 grid md:grid-cols-[250px_minmax(auto,_1fr)]">
         <div>
-          <h4 className="text-xl pb-4">{publisher}</h4>
+          <h4 className="text-xl md:pb-4">{publisher}</h4>
           {editor && <h5>Edited by {editor}</h5>}
         </div>
         <div>
-          <h3 className="text-6xl mb-3 leading-tight">
+          <h3 className="text-3xl md:text-5xl mb-3 leading-tight">
             <Link as={`/publications/${slug}`} href="/publications/[slug]">
               <a className="hover:underline">{title}</a>
             </Link>

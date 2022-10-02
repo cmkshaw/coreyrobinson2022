@@ -19,7 +19,7 @@ const PublicationItem = ({ title, date, slug, publisher }: Props) => {
           <h4 className="text-xl">{publisher}</h4>
         </div>
         <div>
-          <h3 className="text-6xl mb-3 leading-tight">
+          <h3 className="text-3xl md:text-5xl mb-3 leading-tight">
             <Link as={`/media/${slug}`} href="/media/[slug]">
               <a className="hover:underline">{title}</a>
             </Link>

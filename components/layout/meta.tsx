@@ -33,6 +33,7 @@ const Meta = () => {
       <meta name="theme-color" content="#000" />
       <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
       <link rel="preload" as="image" href="/assets/layout/sphere-small.svg" />
+      <link rel="preload" as="image" href="/assets/layout/sphere-tiny.svg" />
       <meta name="description" content={HOME_OG_DESC} />
       <meta property="og:image" content={HOME_OG_IMAGE_URL} />
     </Head>

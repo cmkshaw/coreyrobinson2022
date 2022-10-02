@@ -3,12 +3,7 @@ import { join } from "path";
 import matter from "gray-matter";
 
 export const mediaDirectory = join(process.cwd(), "_media"),
-  postsDirectory = join(process.cwd(), "_posts"),
   publicationsDirectory = join(process.cwd(), "_publications");
-
-export function getPostSlugs() {
-  return fs.readdirSync(postsDirectory);
-}
 
 export function getPubSlugs() {
   return fs.readdirSync(publicationsDirectory);
@@ -47,14 +42,6 @@ export function getPostBySlug(slug: string, fields: string[] = [], directory) {
   return items;
 }
 
-export function getAllPosts(fields: string[] = []) {
-  const slugs = getPostSlugs();
-  const posts = slugs
-    .map((slug) => getPostBySlug(slug, fields, postsDirectory))
-    .sort((post1, post2) => (post1.date > post2.date ? -1 : 1));
-  return posts;
-}
-
 export function getAllPublications(fields: string[] = []) {
   const slugs = getPubSlugs();
   const pubs = slugs
@@ -80,4 +67,12 @@ export function getAllMedia(fields: string[] = []) {
     .map((slug) => getPostBySlug(slug, fields, mediaDirectory))
     .sort((post1, post2) => (post1.date > post2.date ? -1 : 1));
   return media;
+}
+
+export function getLatestMedia(fields: string[] = []) {
+  const slugs = getMediaSlugs();
+  const media = slugs
+    .map((slug) => getPostBySlug(slug, fields, mediaDirectory))
+    .sort((post1, post2) => (post1.date > post2.date ? -1 : 1));
+  return media[0];
 }

@@ -42,6 +42,12 @@
   background-position: right;
 }
 
+.bg-sphere-right {
+  background-image: url("/assets/layout/sphere-right.svg");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+
 .bg-bottom-sphere {
   background-image: url("/assets/layout/bottom-sphere.svg");
   background-repeat: no-repeat;
@@ -59,7 +65,7 @@
   height: 300px;
   width: 300px;
   left: 0;
-  bottom: 0;
+  bottom: 15%;
 }
 
 .bg-noise {
@@ -145,4 +151,8 @@
 
 .flip {
   transform: scaleX(-1);
+}
+
+.portrait {
+  width: 320px;
 }

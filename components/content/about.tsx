@@ -1,9 +1,9 @@
 const About = () => {
   return (
-    <section className="pt-20 md:pt-36 grid sm:grid-cols-1 md:grid-cols-[400px_minmax(auto,_1fr)]">
-      <div className="bg-tiny-sphere pt-8">
+    <section className="pt-20 pb-6 md:pt-36 md:pb-16 grid sm:grid-cols-1 md:grid-cols-[400px_minmax(auto,_1fr)]">
+      <div className="bg-tiny-sphere pt-8 pb-8">
         <img
-          width="320"
+          className="portrait"
           src="/assets/corey-robinson-headshot.png"
           alt="Portrait of Dr. Corey Robinson"
         />

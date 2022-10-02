@@ -6,9 +6,10 @@ type Props = {
   title: string;
   date: string;
   slug: string;
+  type?: "media" | "publications";
 };
 
-const HeroPost = ({ title, date, slug }: Props) => {
+const HeroPost = ({ title, date, slug, type = "publications" }: Props) => {
   return (
     <section>
       <div className="bg-noise-sphere py-20 mt-12 md:mt-20">
@@ -16,7 +17,7 @@ const HeroPost = ({ title, date, slug }: Props) => {
           <h3 className="text-xl pb-6">Recently Published</h3>
           <div className="pb-12">
             <h3 className="mb-4 text-4xl lg:text-5xl leading-tight">
-              <Link as={`/publications/${slug}`} href="/publications/[slug]">
+              <Link as={`/${type}/${slug}`} href={`/${type}/[slug]`}>
                 <a className="hover:underline">{title}</a>
               </Link>
             </h3>

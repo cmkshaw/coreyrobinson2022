@@ -8,23 +8,23 @@ const Navigation = () => {
   return (
     <nav className="pt-8">
       <Container>
-        <div className="md:flex gap-3 justify-between text-2xl">
+        <div className="md:flex gap-3 justify-between text-xl md:text-2xl">
           {isHomepage ? (
             <span></span>
           ) : (
             <div className="sm:flex gap-16">
               <Link href="/">
-                <a className="flex">
+                <a className="hidden lg:flex">
                   <img src="/assets/icons/icon-nav.svg" alt="Arrow icon" />
                   Home
                 </a>
               </Link>
               <Link href="/">
-                <a>Corey Robinson</a>
+                <a className="font-bold sm:font-normal">Corey Robinson</a>
               </Link>
             </div>
           )}
-          <div className="flex gap-8 justify-self-end	">
+          <div className="flex gap-8 justify-self-end pt-2 sm:pt-0">
             <a href="/publications">Publications</a>
             <a href="/cv">CV</a>
             <a href="mailto:corey.j.r.robinson@gmail.com">Contact</a>
