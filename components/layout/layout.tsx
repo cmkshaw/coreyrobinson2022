@@ -15,7 +15,7 @@ const Layout = ({ preview, children }: Props) => {
         <Navigation />
         <main>{children}</main>
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 };

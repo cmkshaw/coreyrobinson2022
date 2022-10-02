@@ -23,8 +23,9 @@ export default function Index({ allPosts, allMedia }: Props) {
         </Head>
         <PageHeader title="Publications" />
         {allPosts.length > 0 && (
-          <section>
+          <section className="bg-bottom-sphere">
           <div className="pb-24 bg-noise-sphere">
+            <div className="bg-side-sphere">
             {allPosts.map((post) => (
               <PublicationItem
                 key={post.slug}
@@ -34,8 +35,9 @@ export default function Index({ allPosts, allMedia }: Props) {
                 publisher={post.publisher}
               />
             ))}
+            </div>
           </div>
-          <div className="pb-24">
+          <div className="pb-36">
             <Container>
               <div className="py-16">
                 <h2 className="text-7xl">Media</h2>

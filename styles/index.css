@@ -36,6 +36,18 @@
   background-position: top left;
 }
 
+.bg-side-sphere {
+  background-image: url("/assets/layout/side-sphere.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.bg-bottom-sphere {
+  background-image: url("/assets/layout/bottom-sphere.svg");
+  background-repeat: no-repeat;
+  background-position: 20% bottom;;
+}
+
 .bg-small-sphere:before {
   position: absolute;
   overflow: visible;
