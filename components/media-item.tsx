@@ -14,7 +14,7 @@ type Props = {
 const PublicationItem = ({ title, date, slug, publisher }: Props) => {
   return (
     <Container>
-      <div className="py-12 gap-12 grid md:grid-cols-[250px_minmax(auto,_1fr)]">
+      <div className="py-12 gap-6 md:gap-12 grid md:grid-cols-[250px_minmax(auto,_1fr)]">
         <div>
           <h4 className="text-xl">{publisher}</h4>
         </div>
