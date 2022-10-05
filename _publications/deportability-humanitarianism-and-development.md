@@ -1,0 +1,8 @@
+---
+title: "Deportability, humanitarianism and development: neoliberal deportation and the Global Assistance for Irregular Migrants program"
+publisher: "Third World Quarterly"
+date: "2022-02-26"
+url: "https://www.tandfonline.com/doi/full/10.1080/01436597.2022.2038128"
+---
+
+Offering return assistance and financial inducements to migrants and asylum-seekers, assisted voluntary return and reintegration (AVRR) programmes are critical to the management of migration. While AVRR programmes have emerged as an area of study in their own right, little attention has been paid to the role of these schemes in the transnational politics of anti-smuggling policy. Building on insights from border studies, migration studies and security studies, this article examines the Global Assistance for Irregular Migrants (GAIM) programme. The GAIM programme is an AVRR programme funded by the Canadian government and implemented by the International Organization for Migration (IOM), which targeted Sri Lankan nationals stranded following the disruption of smuggling ventures in West Africa. This article examines how the GAIM programme framed, rationalised and obscured the practice of neoliberal deportation as a humanitarian gesture in the interests of migrants themselves. It documents and conceptualises the humanitarian claims, narratives and representations mobilised by Canada and the IOM to explain and justify the return of stranded asylum-seekers. It argues that the GAIM programme can be analysed as a form of humanitarian securitisation, which obscures the politics of anti-smuggling policy, masks the violence of deportation and legitimises the return of stranded asylum-seekers.

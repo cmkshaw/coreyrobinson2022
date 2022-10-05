@@ -1,49 +1,39 @@
-import Avatar from './avatar'
-import DateFormatter from './date-formatter'
-import CoverImage from './cover-image'
-import Link from 'next/link'
-import type Author from '../interfaces/author'
+import DateFormatter from "./utils/date-formatter";
+import Container from "./layout/container";
+import Link from "next/link";
 
 type Props = {
-  title: string
-  coverImage: string
-  date: string
-  excerpt: string
-  author: Author
-  slug: string
-}
+  title: string;
+  date: string;
+  slug: string;
+  type?: "media" | "publications";
+};
 
-const HeroPost = ({
-  title,
-  coverImage,
-  date,
-  excerpt,
-  author,
-  slug,
-}: Props) => {
+const HeroPost = ({ title, date, slug, type = "publications" }: Props) => {
   return (
     <section>
-      <div className="mb-8 md:mb-16">
-        <CoverImage title={title} src={coverImage} slug={slug} />
-      </div>
-      <div className="md:grid md:grid-cols-2 md:gap-x-16 lg:gap-x-8 mb-20 md:mb-28">
-        <div>
-          <h3 className="mb-4 text-4xl lg:text-5xl leading-tight">
-            <Link as={`/posts/${slug}`} href="/posts/[slug]">
-              <a className="hover:underline">{title}</a>
-            </Link>
-          </h3>
-          <div className="mb-4 md:mb-0 text-lg">
-            <DateFormatter dateString={date} />
+      <div className="bg-noise-sphere py-20 mt-12 md:mt-20">
+        <Container>
+          <h3 className="text-xl pb-6">Recently Published</h3>
+          <div className="pb-12">
+            <h3 className="mb-4 text-4xl lg:text-5xl leading-tight">
+              <Link as={`/${type}/${slug}`} href={`/${type}/[slug]`}>
+                <a className="hover:underline">{title}</a>
+              </Link>
+            </h3>
+            <div className="mb-4 md:mb-0 text-lg">
+              <DateFormatter dateString={date} />
+            </div>
           </div>
-        </div>
-        <div>
-          <p className="text-lg leading-relaxed mb-4">{excerpt}</p>
-          <Avatar name={author.name} picture={author.picture} />
-        </div>
+          <div className="pb-12">
+            <Link href="/publications">
+              <a className="text-3xl hover:underline">All publications</a>
+            </Link>
+          </div>
+        </Container>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default HeroPost
+export default HeroPost;
