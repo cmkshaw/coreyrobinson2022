@@ -53,11 +53,11 @@ export default function Index({ allPosts, allMedia }: Props) {
                 ))}
               </div>
             </section>
-            <section className="bg-noise-sphere">
+            {/* <section className="bg-noise-sphere">
               <div className="pb-36">
                 <MidPageHeader title="Policy" />
               </div>
-            </section>
+            </section> */}
           </>
         )}
       </Layout>
