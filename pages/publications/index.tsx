@@ -25,39 +25,39 @@ export default function Index({ allPosts, allMedia }: Props) {
         <PageHeader title="Publications" />
         {allPosts.length > 0 && (
           <>
-          <section className="bg-bottom-sphere">
-            <div className="pb-24 bg-noise-sphere">
-              <div className="bg-side-sphere">
-                {allPosts.map((post) => (
-                  <PublicationItem
+            <section className="bg-bottom-sphere">
+              <div className="pb-24 bg-noise-sphere">
+                <div className="bg-side-sphere">
+                  {allPosts.map((post) => (
+                    <PublicationItem
+                      key={post.slug}
+                      title={post.title}
+                      date={post.date}
+                      slug={post.slug}
+                      publisher={post.publisher}
+                      editor={post.editor}
+                    />
+                  ))}
+                </div>
+              </div>
+              <div className="pb-36">
+                <MidPageHeader title="Media" />
+                {allMedia.map((post) => (
+                  <MediaItem
                     key={post.slug}
                     title={post.title}
                     date={post.date}
                     slug={post.slug}
                     publisher={post.publisher}
-                    editor={post.editor}
                   />
                 ))}
               </div>
-            </div>
-            <div className="pb-36">
-              <MidPageHeader title="Media"/>
-              {allMedia.map((post) => (
-                <MediaItem
-                  key={post.slug}
-                  title={post.title}
-                  date={post.date}
-                  slug={post.slug}
-                  publisher={post.publisher}
-                />
-              ))}
-            </div>
-          </section>
-          <section className="bg-noise-sphere">
-            <div className="pb-36">
-              <MidPageHeader title="Policy"/>
-            </div>
-          </section>
+            </section>
+            <section className="bg-noise-sphere">
+              <div className="pb-36">
+                <MidPageHeader title="Policy" />
+              </div>
+            </section>
           </>
         )}
       </Layout>
