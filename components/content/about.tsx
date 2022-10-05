@@ -24,13 +24,16 @@ const About = () => {
         </p>
         <p>
           Corey holds a Ph.D. in Political Science and a Graduate Diploma in
-          Refugee and Migration Studies from York University. Corey’s work has
-          appeared in Third World Quarterly, International Political Sociology,
-          Security Dialogue, and Millennium: Journal of International Studies
-          and several scholarly volumes in migration studies.
+          Refugee and Migration Studies from York University. With expertise in
+          migrant smuggling, irregular migration, asylum and global migration
+          governance, Corey's research has appeared in Third World Quarterly,
+          International Political Sociology, Security Dialogue, Millennium:
+          Journal of International Studies, media outlets such as The New
+          Humanitarian, The Toronto Star and The Conversation and in several
+          scholarly volumes.
         </p>
         <p>
-          Corey’s Ph.D. research was funded through the Social Sciences and
+          Corey's Ph.D. research was funded through the Social Sciences and
           Humanities Research Council (SSHRC) Joseph-Armand Bombardier Canada
           Graduate Scholarships Program (CGS) Doctoral Scholarships and the
           Ontario Graduate Scholarship (OGS). Prior to taking up his post at
