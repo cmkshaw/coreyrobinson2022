@@ -2,12 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Add some breathing room to the paragraph tags */
 @layer base {
   * {
-    /* todo: add backup fonts */
-    font-family: "Satoshi";
+    font-family: "Satoshi", Arial, sans-serif;
   }
+  /* Add some breathing room to the paragraph tags */
   p {
     @apply mb-4;
     @apply text-xl;
@@ -17,11 +16,6 @@
     font-family: Satoshi;
     font-weight: 400;
     src: url(/fonts/satoshi/regular.woff) format("woff");
-  }
-  @font-face {
-    font-family: Satoshi;
-    font-weight: 500;
-    src: url(/fonts/satoshi/medium.woff) format("woff");
   }
   @font-face {
     font-family: Satoshi;
