@@ -1,23 +1,23 @@
 import { AppProps } from "next/app";
-import { useEffect } from 'react'
-import Script from 'next/script'
-import { useRouter } from 'next/router'
-import * as gtag from '../lib/analytics'
+import { useEffect } from "react";
+import Script from "next/script";
+import { useRouter } from "next/router";
+import * as gtag from "../lib/analytics";
 import "../styles/index.css";
 
 export default function MyApp({ Component, pageProps }: AppProps) {
-  const router = useRouter()
+  const router = useRouter();
   useEffect(() => {
     const handleRouteChange = (url) => {
-      gtag.pageview(url)
-    }
-    router.events.on('routeChangeComplete', handleRouteChange)
-    router.events.on('hashChangeComplete', handleRouteChange)
+      gtag.pageview(url);
+    };
+    router.events.on("routeChangeComplete", handleRouteChange);
+    router.events.on("hashChangeComplete", handleRouteChange);
     return () => {
-      router.events.off('routeChangeComplete', handleRouteChange)
-      router.events.off('hashChangeComplete', handleRouteChange)
-    }
-  }, [router.events])
+      router.events.off("routeChangeComplete", handleRouteChange);
+      router.events.off("hashChangeComplete", handleRouteChange);
+    };
+  }, [router.events]);
   return (
     <>
       {/* Global Site Tag (gtag.js) - Google Analytics */}
@@ -41,5 +41,5 @@ export default function MyApp({ Component, pageProps }: AppProps) {
       />
       <Component {...pageProps} />
     </>
-  )
+  );
 }
