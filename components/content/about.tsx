@@ -30,22 +30,6 @@ const About = () => {
           and several scholarly volumes in migration studies.
         </p>
         <p>
-          Corey’s research adopts an ethnographic sensibility. It uses a range
-          of critical methodologies, including interviews with bureaucrats in
-          the field of border enforcement and migration control in Canada, such
-          as the Canada Border Services Agency, Immigration, Refugees and
-          Citizenship Canada, Global Affairs Canada and the Office of the
-          Special Advisor on Illegal Migration and Human Smuggling, as well as
-          actors on the international stage like the International Organization
-          for Migration (IOM) and the United Nations Office on Drugs and Crime
-          (UNODC). Additionally, Corey uses access-to-information requests and a
-          variety of ‘grey literature’ (memos, briefing notes, internal reports
-          and intelligence assessments) from federal agencies in Canada to gain
-          a better understanding of the world of border enforcement and
-          migration management, which is often hidden from researchers and the
-          public.
-        </p>
-        <p>
           Corey’s Ph.D. research was funded through the Social Sciences and
           Humanities Research Council (SSHRC) Joseph-Armand Bombardier Canada
           Graduate Scholarships Program (CGS) Doctoral Scholarships and the
