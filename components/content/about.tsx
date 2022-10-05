@@ -34,7 +34,7 @@ const About = () => {
           Humanities Research Council (SSHRC) Joseph-Armand Bombardier Canada
           Graduate Scholarships Program (CGS) Doctoral Scholarships and the
           Ontario Graduate Scholarship (OGS). Before coming to Durham
-          University, Corey was a sessional instructor at York University and
+          University, Corey held teaching positions at York University and
           the University of Toronto.
         </p>
         <p>
