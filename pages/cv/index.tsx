@@ -14,8 +14,8 @@ export default function CV() {
         <PageHeader title="CV" />
         <Container>
           <iframe
+            className="cv"
             width="100%"
-            height="800px"
             id="cv"
             src="/assets/cvs/corey-robinson-cv-usa-september-2022.pdf"
           ></iframe>
