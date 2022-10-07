@@ -26,11 +26,31 @@ const About = () => {
           Corey holds a Ph.D. in Political Science and a Graduate Diploma in
           Refugee and Migration Studies from York University. With expertise in
           migrant smuggling, irregular migration, asylum and global migration
-          governance, Corey's research has appeared in Third World Quarterly,
-          International Political Sociology, Security Dialogue, Millennium:
-          Journal of International Studies, media outlets such as The New
-          Humanitarian, The Toronto Star and The Conversation and in several
-          scholarly volumes.
+          governance, Corey's research has appeared in{" "}
+          <a href="/publications/deportability-humanitarianism-and-development">
+            <em>Third World Quarterly</em>
+          </a>
+          ,{" "}
+          <a href="/publications/making-migration-knowable-and-governable">
+            <em>International Political Sociology</em>
+          </a>
+          ,{" "}
+          <a href="/publications/tracing-and-explaining-securitization">
+            <em>Security Dialogue</em>
+          </a>
+          ,{" "}
+          <a href="publications/cosmopolitanism-and-liberal-universalism">
+            <em>Millennium: Journal of International Studies</em>
+          </a>{" "}
+          and in several scholarly volumes. Corey’s writing has also appeared in
+          media outlets such as{" "}
+          <a href="/media/new-humanitarian"><em>The New Humanitarian</em></a>,{" "}
+          <a href="/media/suspension-of-foreign-workers"><em>The Toronto Star</em></a>{" "}
+          and{" "}
+          <a href="/media/the-myth-of-the-evil-people-smuggler">
+            <em>The Conversation</em>
+          </a>
+          .
         </p>
         <p>
           Corey's Ph.D. research was funded through the Social Sciences and
