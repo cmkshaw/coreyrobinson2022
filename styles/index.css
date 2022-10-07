@@ -12,10 +12,10 @@
     @apply text-xl;
   }
   p a {
-    border-bottom: 2px solid #3838ea;;
+    color: #2628e7;
   }
   p a:hover {
-    color: #3838ea;
+    text-decoration: underline;
   }
   /* https://tailwindcss.com/docs/adding-base-styles */
   @font-face {
