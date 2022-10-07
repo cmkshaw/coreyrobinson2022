@@ -7,7 +7,8 @@ const Elsewhere = () => {
       <div className="text-3xl">
         <ul>
           <li className="pb-4">
-            <a
+            <a 
+              className="hover:underline"
               target="_blank"
               rel="noopener noreferrer"
               href="http://yorku.academia.edu/CoreyRobinson"
@@ -17,6 +18,7 @@ const Elsewhere = () => {
           </li>
           <li className="pb-4">
             <a
+              className="hover:underline"
               target="_blank"
               rel="noopener noreferrer"
               href="https://www.linkedin.com/in/corey-robinson-1621b0133/"
@@ -26,6 +28,7 @@ const Elsewhere = () => {
           </li>
           <li className="pb-4">
             <a
+              className="hover:underline"
               target="_blank"
               rel="noopener noreferrer"
               href="https://scholar.google.ca/citations?user=LJ5DrEAAAAAJ&hl=en&oi=sra"
@@ -35,6 +38,7 @@ const Elsewhere = () => {
           </li>
           <li className="pb-4">
             <a
+              className="hover:underline"
               target="_blank"
               rel="noopener noreferrer"
               href="https://www.ratemyprofessors.com/ShowRatings.jsp?tid=2584498#ratingsList"
