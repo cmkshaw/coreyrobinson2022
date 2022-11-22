@@ -56,13 +56,14 @@ const About = () => {
           Corey's Ph.D. research was funded through the Social Sciences and
           Humanities Research Council (SSHRC) Joseph-Armand Bombardier Canada
           Graduate Scholarships Program (CGS) Doctoral Scholarships and the
-          Ontario Graduate Scholarship (OGS). Prior to taking up his post at
-          Durham in 2022, he held teaching positions at the University of
-          Toronto and York University and research positions at Humanitarian
-          Outcomes, where he co-authored the Joint Evaluation of the Protection
-          of the Rights of Refugees During the COVID-19 Pandemic, conducted by
-          UNHCR, the OECD and other actors as a part of the COVID-19 Global
-          Evaluation Coalition.
+          Ontario Graduate Scholarship (OGS). Before coming to Durham in 2022,
+          Corey held teaching positions at the University of Toronto and York
+          University and conducted research in the field of humanitarian 
+          evaluation. <a href="https://www.humanitarianoutcomes.org">At Humanitarian Outcomes</a>, he co-authored the <a href="https://www.covid19-evaluation-coalition.org/documents/Final%20Report%20-%20Refugees%20Rights%20During%20The%20Covid%2019%20.pdf">Joint Evaluation 
+          of the Protection of the Rights of Refugees During the COVID-19 Pandemic</a>, 
+          conducted under the auspices of UNHCR, the OECD and other actors 
+          as a part of the <a href="https://www.covid19-evaluation-coalition.org">
+        COVID-19 Global Evaluation Coalition.</a>
         </p>
         <p>
           Aside from academia, Corey enjoys playing drums and guitar, cooking,
