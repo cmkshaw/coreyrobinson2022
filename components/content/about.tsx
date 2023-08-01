@@ -62,6 +62,8 @@ const About = () => {
           conducted under the auspices of UNHCR, the OECD and other actors 
           as a part of the <a href="https://www.covid19-evaluation-coalition.org">
           COVID-19 Global Evaluation Coalition.</a>
+        </p>
+        <p>
           Corey holds a Ph.D. in Political Science and a Graduate Diploma in
           Refugee and Migration Studies from York University.
           Corey's Ph.D. research was funded through the Social Sciences and
