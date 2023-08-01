@@ -13,8 +13,7 @@ const About = () => {
           Corey Robinson
         </h1>
         <h2 className="text-2xl mb-6">
-          Lecturer in International Relations in the School of Government and
-          International Affairs, Durham University.
+          Lecturer (Assistant Professor) in International Relations, University of Glasgow.
         </h2>
         <p>
           Working at the intersection of international political sociology,
@@ -23,10 +22,12 @@ const About = () => {
           and border control.
         </p>
         <p>
-          Corey holds a Ph.D. in Political Science and a Graduate Diploma in
-          Refugee and Migration Studies from York University. With expertise in
-          migrant smuggling, irregular migration, asylum and global migration
+          With expertise in migrant smuggling, irregular migration, asylum and global migration
           governance, Corey's research has appeared in{" "}
+          <a href="/publications/offshoring-and-outsourcing-anti-smuggling-policy">
+            <em>Geopolitics</em>
+          </a>
+          ,{" "}
           <a href="/publications/deportability-humanitarianism-and-development">
             <em>Third World Quarterly</em>
           </a>
@@ -53,17 +54,20 @@ const About = () => {
           .
         </p>
         <p>
-          Corey's Ph.D. research was funded through the Social Sciences and
-          Humanities Research Council (SSHRC) Joseph-Armand Bombardier Canada
-          Graduate Scholarships Program (CGS) Doctoral Scholarships and the
-          Ontario Graduate Scholarship (OGS). Before coming to Durham in 2022,
-          Corey held teaching positions at the University of Toronto and York
+          Before coming to Glasgow in 2023, Corey was a Lecturer in International Relations at Durham University (2022-23). 
+          Previously, Corey held teaching positions at the University of Toronto and York
           University and conducted research in the field of humanitarian 
           evaluation. <a href="https://www.humanitarianoutcomes.org">At Humanitarian Outcomes</a>, Corey co-authored the <a href="https://www.covid19-evaluation-coalition.org/documents/Final%20Report%20-%20Refugees%20Rights%20During%20The%20Covid%2019%20.pdf">Joint Evaluation 
           of the Protection of the Rights of Refugees During the COVID-19 Pandemic</a>, 
           conducted under the auspices of UNHCR, the OECD and other actors 
           as a part of the <a href="https://www.covid19-evaluation-coalition.org">
-        COVID-19 Global Evaluation Coalition.</a>
+          COVID-19 Global Evaluation Coalition.</a>
+          Corey holds a Ph.D. in Political Science and a Graduate Diploma in
+          Refugee and Migration Studies from York University.
+          Corey's Ph.D. research was funded through the Social Sciences and
+          Humanities Research Council (SSHRC) Joseph-Armand Bombardier Canada
+          Graduate Scholarships Program (CGS) Doctoral Scholarships and the
+          Ontario Graduate Scholarship (OGS). 
         </p>
         <p>
           Aside from academia, Corey enjoys playing drums and guitar, cooking,
