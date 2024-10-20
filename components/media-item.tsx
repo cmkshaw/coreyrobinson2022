@@ -9,9 +9,10 @@ type Props = {
   excerpt?: string;
   slug: string;
   publisher: string;
+  coauthors?: string;
 };
 
-const PublicationItem = ({ title, date, slug, publisher }: Props) => {
+const MediaItem = ({ title, date, slug, publisher, coauthors }: Props) => {
   return (
     <Container>
       <div className="py-12 gap-6 md:gap-12 grid md:grid-cols-[250px_minmax(auto,_1fr)]">
@@ -20,16 +21,17 @@ const PublicationItem = ({ title, date, slug, publisher }: Props) => {
         </div>
         <div>
           <h3 className="text-3xl md:text-5xl mb-3 leading-tight">
-            <Link as={`/media/${slug}`} href="/media/[slug]">
+            <Link as={slug} href={slug}>
               <a className="hover:underline">{title}</a>
             </Link>
           </h3>
+          {coauthors ? <h4 className="text-xl  mb-3">{coauthors}</h4> : null}
           <DateFormatter dateString={date} />
         </div>
       </div>
-      <Separator type="border-blue" />
+      <Separator/>
     </Container>
   );
 };
 
-export default PublicationItem;
+export default MediaItem;
