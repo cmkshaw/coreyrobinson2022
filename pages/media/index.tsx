@@ -8,7 +8,6 @@ import { SITE_NAME } from "../../lib/constants";
 import ScrollArrow from "../../components/layout/scrolltop";
 import PublicationItem from "../../components/publication-item";
 import MediaItem from "../../components/media-item";
-import MidPageHeader from "../../components/layout/mid-page-header";
 
 type Props = {
   allPosts: Post[];
@@ -20,31 +19,30 @@ export default function Index({ allPosts, allMedia }: Props) {
     <>
       <Layout>
         <Head>
-          <title>Publications | {SITE_NAME}</title>
+          <title>Media | {SITE_NAME}</title>
         </Head>
-        <PageHeader title="Publications" />
+        <PageHeader title="Media" />
         {allPosts.length > 0 && (
           <>
             <section className="bg-bottom-sphere">
               <div className="pb-24 bg-noise-sphere">
                 <div className="bg-side-sphere">
-                  {allPosts.map((post) => (
-                    <PublicationItem
-                      key={post.slug}
-                      title={post.title}
-                      date={post.date}
-                      slug={post.slug}
-                      publisher={post.publisher}
-                      editor={post.editor}
-                    />
-                  ))}
+                {allMedia.map((post) => (
+                  <MediaItem
+                    key={post.slug}
+                    title={post.title}
+                    date={post.date}
+                    slug={post.slug}
+                    publisher={post.publisher}
+                  />
+                ))}
                 </div>
               </div>
+            
             </section>
           </>
         )}
       </Layout>
-      {/* <ScrollArrow /> */}
     </>
   );
 }

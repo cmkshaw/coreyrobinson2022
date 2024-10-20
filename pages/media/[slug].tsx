@@ -6,9 +6,9 @@ import PostHeader from "../../components/post/post-header";
 import Layout from "../../components/layout/layout";
 import {
   getPostBySlug,
-  getAllMedia,
-  mediaDirectory,
-  getLatestMedia,
+  getAllPublications,
+  getLatestPublication,
+  publicationsDirectory,
 } from "../../lib/api";
 import markdownToHtml from "../../lib/markdownToHtml";
 import type PostType from "../../interfaces/post";
@@ -19,15 +19,17 @@ type Props = {
   post: PostType;
   morePosts: PostType[];
   preview?: boolean;
-  latestMedia: PostType;
+  latestPublication: PostType;
 };
 
-export default function Post({ post, preview, latestMedia }: Props) {
+export default function Post({ post, preview, latestPublication }: Props) {
+  const isSameArticle = latestPublication.title === post.title;
   const router = useRouter();
-  const isSameArticle = latestMedia.title === post.title;
+
   if (!router.isFallback && !post?.slug) {
     return <ErrorPage statusCode={404} />;
   }
+
   return (
     <Layout preview={preview}>
       <Container>
@@ -39,20 +41,26 @@ export default function Post({ post, preview, latestMedia }: Props) {
               <PostHead title={post.title} />
               <PostHeader
                 publisher={post.publisher}
+                coauthor={post.coauthor}
+                editor={post.editor}
+                press={post.press}
                 title={post.title}
                 date={post.date}
               />
-              <PostBody type="media" content={post.content} url={post.url} />
+              <PostBody
+                type="publication"
+                content={post.content}
+                url={post.url}
+              />
             </article>
           </>
         )}
       </Container>
-      {latestMedia && !isSameArticle && (
+      {latestPublication && !isSameArticle && (
         <HeroPost
-          type="media"
-          title={latestMedia.title}
-          date={latestMedia.date}
-          slug={latestMedia.slug}
+          title={latestPublication.title}
+          date={latestPublication.date}
+          slug={latestPublication.slug}
         />
       )}
     </Layout>
@@ -66,18 +74,30 @@ type Params = {
 };
 
 export async function getStaticProps({ params }: Params) {
-  const latestMedia = getLatestMedia(["title", "date", "slug"]);
+  const latestPublication = getLatestPublication(["title", "date", "slug"]);
+
   const post = getPostBySlug(
     params.slug,
-    ["title", "date", "slug", "author", "content", "publisher", "url"],
-    mediaDirectory
+    [
+      "title",
+      "date",
+      "slug",
+      "author",
+      "content",
+      "coauthor",
+      "publisher",
+      "url",
+      "press",
+      "editor",
+    ],
+    publicationsDirectory
   );
 
   const content = await markdownToHtml(post.content || "");
 
   return {
     props: {
-      latestMedia,
+      latestPublication,
       post: {
         ...post,
         content,
@@ -87,7 +107,7 @@ export async function getStaticProps({ params }: Params) {
 }
 
 export async function getStaticPaths() {
-  const posts = getAllMedia(["slug"]);
+  const posts = getAllPublications(["slug"]);
 
   return {
     paths: posts.map((post) => {

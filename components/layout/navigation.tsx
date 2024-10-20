@@ -26,6 +26,7 @@ const Navigation = () => {
           )}
           <div className="flex gap-8 justify-self-end pt-2 sm:pt-0">
             <a href="/publications">Publications</a>
+            <a href="/media">Media</a>
             <a href="/cv">CV</a>
             <a href="mailto:corey.j.r.robinson@gmail.com">Email</a>
             <a href="https://twitter.com/bordersorders">

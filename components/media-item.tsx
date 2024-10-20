@@ -27,7 +27,7 @@ const PublicationItem = ({ title, date, slug, publisher }: Props) => {
           <DateFormatter dateString={date} />
         </div>
       </div>
-      <Separator type="border-blue" />
+      <Separator />
     </Container>
   );
 };
