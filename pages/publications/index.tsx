@@ -22,7 +22,7 @@ export default function Index({ allPosts, allMedia }: Props) {
         <Head>
           <title>Publications &amp; Media | {SITE_NAME}</title>
         </Head>
-        <PageHeader title="Publications" />
+        <PageHeader title="Publications & Media" />
         {allPosts.length > 0 && (
           <>
             <section className="bg-bottom-sphere">
