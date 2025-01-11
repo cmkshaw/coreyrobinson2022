@@ -17,7 +17,7 @@ export default function CV() {
             className="cv"
             width="100%"
             id="cv"
-            src="/assets/cvs/corey-robinson-cv-october-2024.pdf"
+            src="/assets/cvs/corey-robinson-cv-jan-2025.pdf"
           ></iframe>
         </Container>
       </Layout>
