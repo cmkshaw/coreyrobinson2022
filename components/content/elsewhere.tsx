@@ -36,16 +36,6 @@ const Elsewhere = () => {
               Google scholar
             </a>
           </li>
-          <li className="pb-4">
-            <a
-              className="hover:underline"
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://www.ratemyprofessors.com/ShowRatings.jsp?tid=2584498#ratingsList"
-            >
-              Rate my professor
-            </a>
-          </li>
         </ul>
       </div>
     </section>
