@@ -1,7 +1,7 @@
 ---
 title: "Conspiracy theory, anti-globalism, and the Freedom Convoy: The Great Reset and conspiracist delegitimation"
 coauthor: "Scott Watson"
-publisher: "Review of International Studies."
+publisher: "Review of International Studies"
 date: "2025-01-01"
 url: "https://doi.org/10.1017/S0260210524000925"
 ---

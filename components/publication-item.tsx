@@ -9,11 +9,12 @@ type Props = {
   excerpt?: string;
   slug: string;
   publisher: string;
+  coauthors?: string;
   editor?: string;
   press?: string;
 };
 
-const PublicationItem = ({ title, date, slug, publisher, editor }: Props) => {
+const PublicationItem = ({ title, date, slug, publisher, editor, coauthors }: Props) => {
   return (
     <Container>
       <div className="py-12 gap-6 md:gap-12 grid md:grid-cols-[250px_minmax(auto,_1fr)]">
@@ -27,6 +28,7 @@ const PublicationItem = ({ title, date, slug, publisher, editor }: Props) => {
               <a className="hover:underline">{title}</a>
             </Link>
           </h3>
+          {coauthors ? <h4 className="text-xl  mb-3">{coauthors}</h4> : null}
           <DateFormatter dateString={date} />
         </div>
       </div>
