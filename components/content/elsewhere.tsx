@@ -21,9 +21,9 @@ const Elsewhere = () => {
               className="hover:underline"
               target="_blank"
               rel="noopener noreferrer"
-              href="https://www.linkedin.com/in/corey-robinson-1621b0133/"
+              href="https://scholar.google.ca/citations?user=LJ5DrEAAAAAJ&hl=en&oi=sra"
             >
-              Linkedin
+              Google scholar
             </a>
           </li>
           <li className="pb-4">
@@ -31,9 +31,9 @@ const Elsewhere = () => {
               className="hover:underline"
               target="_blank"
               rel="noopener noreferrer"
-              href="https://scholar.google.ca/citations?user=LJ5DrEAAAAAJ&hl=en&oi=sra"
+              href="https://www.linkedin.com/in/corey-robinson-1621b0133/"
             >
-              Google scholar
+              Linkedin
             </a>
           </li>
         </ul>
